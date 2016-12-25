@@ -1,0 +1,24 @@
+{
+	"name": "johnson-path-finder",
+	"version": "1.0.0",
+	"description": "An implementation of Johnsons All Pairs Shortest Path algorithm.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cortys/fundamentalAlgorithmsExercise.git"
+	},
+	"author": "Clemens Damke",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Cortys/fundamentalAlgorithmsExercise/issues"
+	},
+	"homepage": "https://github.com/Cortys/fundamentalAlgorithmsExercise#readme",
+
+	"devDependencies": {
+		"eslint": "3.12.2",
+		"eslint-config-cortys": "1.x"
+	}
+}
