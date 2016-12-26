@@ -2,23 +2,22 @@
 
 const Node = require("./Node");
 
-const nodes = Symbol("nodes");
-
 class Graph {
 	constructor() {
-		this[nodes] = [];
+		this.nodes = [];
 	}
 
-	addNode(data) {
-		const node = new Node(data);
+	addNode() {
+		const node = new Node();
 
-		this[nodes].push(node);
+		node.id = this.nodes.length;
+		this.nodes.push(node);
 
-		return node.id = this[nodes].length - 1;
+		return node;
 	}
 
 	getNode(id) {
-		return this[nodes][id];
+		return this.nodes[id];
 	}
 }
 
