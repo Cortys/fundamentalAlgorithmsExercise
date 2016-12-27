@@ -17,6 +17,10 @@
 	},
 	"homepage": "https://github.com/Cortys/fundamentalAlgorithmsExercise#readme",
 
+	"dependencies": {
+		"fastpriorityqueue": "0.1.0"
+	},
+
 	"devDependencies": {
 		"eslint": "3.12.2",
 		"eslint-config-cortys": "1.x"
