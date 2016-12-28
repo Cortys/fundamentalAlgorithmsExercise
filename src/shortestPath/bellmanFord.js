@@ -7,7 +7,7 @@ function bellmanFord(graph, start) {
 	distance.set(start, 0);
 
 	for(let i = 0; i < graph.nodes.length; i++) {
-		let foundShorterDistance;
+		let foundShorterDistance = false;
 
 		graph.nodes.forEach(from => {
 			const nodeDist = distance.get(from);
@@ -19,7 +19,7 @@ function bellmanFord(graph, start) {
 					return;
 
 				distance.set(to, newDist);
-				foundShorterDistance = to;
+				foundShorterDistance = true;
 			});
 		});
 
@@ -27,7 +27,7 @@ function bellmanFord(graph, start) {
 			break;
 
 		if(i === graph.nodes.length - 1)
-			throw new Error(`The given graph contains a negative edge cycle. A node on a path with a cycle is ${foundShorterDistance.id}.`);
+			throw new Error("The given graph contains a negative edge cycle.");
 	}
 
 	return distance;
