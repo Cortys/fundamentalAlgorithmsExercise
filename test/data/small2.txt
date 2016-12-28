@@ -1,7 +1,7 @@
 # A small test graph with positive weights.
 n = 5
 m = ?
-0: 1w1 4w2
-1: 2w1
-2: 3w1
+0: 1w5 4w2
+1: 2w-1
+2: 3w-1
 4: 3w2
