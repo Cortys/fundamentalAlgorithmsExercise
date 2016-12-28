@@ -3,12 +3,24 @@
 const fs = require("fs");
 
 const { parse } = require("./graph");
-const { dijkstra } = require("./shortestPath");
+const { johnson } = require("./shortestPath");
 
 const inputData = fs.readFileSync(process.argv[2], "utf8");
 
 const graph = parse(inputData);
 
-const start = 0;
+try {
+	johnson(graph).forEach((distance, from) => {
+		let output = `delta ${from.id} :`;
 
-dijkstra(graph, graph.getNode(start)).forEach((distance, node) => console.log(`${start} -> ${node.id}: ${distance}`));
+		distance.forEach((distance, to) => {
+			if(Number.isFinite(distance))
+				output += ` ${to.id}w${distance}`;
+		});
+
+		console.log(output);
+	});
+}
+catch(err) {
+	console.log("delta : negative-cycles");
+}
