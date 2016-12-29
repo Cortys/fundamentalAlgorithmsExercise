@@ -23,7 +23,7 @@ function bellmanFord(graph, start) {
 			});
 		});
 
-		if(foundShorterDistance === undefined)
+		if(!foundShorterDistance)
 			break;
 
 		if(i === graph.nodes.length - 1)

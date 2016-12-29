@@ -33,7 +33,7 @@ function dijkstra(graph, start) {
 	distance.set(start, 0);
 
 	queue.heapify([...graph.nodes]);
-	queue.array.forEach((node, index) => marked.set(node, index));
+	queue.array.forEach((node, i) => index.set(node, i));
 
 	while(!queue.isEmpty()) {
 		const node = queue.poll();
