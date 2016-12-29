@@ -1,10 +1,3 @@
 {
-	"minified": true,
-	"presets": [
-		["env", {
-			"targets": {
-				"node": "4.2"
-			}
-		}]
-	]
+	"presets": ["es2015"]
 }
