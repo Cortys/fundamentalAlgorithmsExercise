@@ -1,0 +1,10 @@
+{
+	"minified": true,
+	"presets": [
+		["env", {
+			"targets": {
+				"node": "4.2"
+			}
+		}]
+	]
+}

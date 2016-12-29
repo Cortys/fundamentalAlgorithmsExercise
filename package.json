@@ -4,7 +4,8 @@
 	"description": "An implementation of Johnsons All Pairs Shortest Path algorithm.",
 	"main": "src/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack"
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +24,10 @@
 
 	"devDependencies": {
 		"eslint": "3.12.2",
-		"eslint-config-cortys": "1.x"
+		"eslint-config-cortys": "1.x",
+		"babel-core": "^6.21.1",
+		"babel-preset-env": "^1.1.4",
+		"babel-loader": "6.2.10",
+		"webpack": "1.14.0"
 	}
 }
