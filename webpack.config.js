@@ -16,10 +16,7 @@ module.exports = {
 		}]
 	},
 	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-			include: /johnson/,
-			minimize: true
-		}),
+		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.BannerPlugin("#!/usr/bin/env node", {
 			raw: true
 		})
