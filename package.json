@@ -1,11 +1,11 @@
 {
-	"name": "johnson-path-finder",
-	"version": "1.0.0",
+	"name": "@cortys/johnson-path-finder",
+	"version": "1.0.1",
 	"description": "An implementation of Johnsons All Pairs Shortest Path algorithm.",
 	"main": "src/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack; mv build/johnson.js build/johnson; chmod +x build/johnson"
+		"build": "webpack; mv build/johnson.js build/johnson; chmod +x build/johnson",
+		"prepublish": "npm run build"
 	},
 	"repository": {
 		"type": "git",
@@ -17,6 +17,10 @@
 		"url": "https://github.com/Cortys/fundamentalAlgorithmsExercise/issues"
 	},
 	"homepage": "https://github.com/Cortys/fundamentalAlgorithmsExercise#readme",
+
+	"bin": {
+		"johnson": "./build/johnson"
+	},
 
 	"dependencies": {
 		"fastpriorityqueue": "0.1.0"
