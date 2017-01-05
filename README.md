@@ -4,7 +4,7 @@ An implementation of Johnsons All Pairs Shortest Path algorithm.
 
 ## Simple installation
 
-Node.js >= 4 has to be installed. Simply execute the following in a terminal: `npm i @cortys/johnson-path-finder`
+Node.js >= 4 has to be installed. Simply execute the following in a terminal: `npm i -g @cortys/johnson-path-finder`
 
 After that you should have a `johnson` executable on your `$PATH`.
 
