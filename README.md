@@ -15,8 +15,7 @@ This only works on Linux/Unix systems. Node.js >= 4 and git has to be installed.
 ```sh
 git clone https://github.com/Cortys/fundamentalAlgorithmsExercise.git
 cd fundamentalAlgorithmsExercise
-npm i
-npm run build
+npm install
 ```
 Afterwards you should find an executable in `build/johnson`.
 
